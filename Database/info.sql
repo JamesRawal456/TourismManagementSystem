@@ -1,5 +1,6 @@
 -- Password: Admin 
 -- Username: Admin
+-- Database name: Infopackage
 
 
 
