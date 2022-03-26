@@ -1,3 +1,8 @@
+-- Password: Admin 
+-- Username: Admin
+
+
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -228,9 +233,9 @@ ALTER TABLE `tmspages`
 ALTER TABLE `tmstourpackages`
   ADD PRIMARY KEY (`PackageId`);
 
---
+
 -- Indexes for table `tmsusers`
---
+
 ALTER TABLE `tmsusers`
   ADD PRIMARY KEY (`id`),
   ADD KEY `EmailId` (`EmailId`),
@@ -244,39 +249,39 @@ ALTER TABLE `tmsusers`
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
---
+
 -- AUTO_INCREMENT for table `tmsbooking`
---
+
 ALTER TABLE `tmsbooking`
   MODIFY `BookingId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
---
+
 -- AUTO_INCREMENT for table `tmsenquiry`
---
+
 ALTER TABLE `tmsenquiry`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
---
+
 -- AUTO_INCREMENT for table `tmsissues`
---
+
 ALTER TABLE `tmsissues`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
---
+
 -- AUTO_INCREMENT for table `tmspages`
---
+
 ALTER TABLE `tmspages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
---
+
 -- AUTO_INCREMENT for table `tmstourpackages`
---
+
 ALTER TABLE `tmstourpackages`
   MODIFY `PackageId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
---
+
 -- AUTO_INCREMENT for table `tmsusers`
---
+
 ALTER TABLE `tmsusers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
