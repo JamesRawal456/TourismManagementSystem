@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('includes/config.php');
+include('included/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
 header('location:index.php');
@@ -36,7 +36,7 @@ else{
 <div class="left-content">
 	   <div class="mother-grid-inner">
 <!--header start here-->
-<?php include('includes/header.php');?>
+<?php include('included/header.php');?>
 <!--header end here-->
 		<ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
