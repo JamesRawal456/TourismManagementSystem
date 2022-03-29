@@ -16,7 +16,7 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
-	/* background:#011D4A!mportant; */
+	/* background:#011D4A; */
 }
 a:focus, a:active, a:hover ,a.dropdown-toggle{
     outline: none;
@@ -323,7 +323,7 @@ li#menu-academico{
     font-size: 35px;
 }
 .logo-w3-agile h1 a {
-    color: black;
+    color: white;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -336,7 +336,7 @@ li#menu-academico{
 .profile_details {
     float: left;
     width: 24.25%;
-    background: #1b93e1;
+    background: rgb(97, 97, 164);
     text-align: center;
     padding: 0.3em 1em;
 }
