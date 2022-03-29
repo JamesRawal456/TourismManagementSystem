@@ -16,7 +16,7 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
-	background:#011D4A!mportant;
+	/* background:#011D4A!mportant; */
 }
 a:focus, a:active, a:hover ,a.dropdown-toggle{
     outline: none;
@@ -323,7 +323,7 @@ li#menu-academico{
     font-size: 35px;
 }
 .logo-w3-agile h1 a {
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -898,12 +898,12 @@ ul.dropdown-menu.drp-mnu li {
 /*--header --*/
 /*---four-grids-----*/ 
 .four-agileits {
-    background: #ff4a43;
+    background: red;
     text-align: center;
     padding: 2em 0;
 }
 .four-agileinfo {
-    background: #22beef;
+    background: pink;
     padding: 2em 0;
     text-align: center;
 }
