@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('included/config.php');
+include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
 header('location:index.php');
@@ -17,30 +17,32 @@ else{
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/morris.css" type="text/css"/>
+<link href="css/style.css" rel='stylesheet' type='text/css' /> 
+<link rel="stylesheet" href="css/morris.css" type="text/css"/> not needed
 <!-- Graph CSS -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- for side bar effect and all-->
 <!-- jQuery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>  <!-- for clicking options in page -->
 <!-- //jQuery -->
-<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
-<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/> <!-- for text and info in page-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  <!-- for text and info in page-->
 <!-- lined-icons -->
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
 <!-- //lined-icons -->
 </head> 
 <body>
    <div class="page-container">
-   <!--/content-inner-->
+
+
+
+<!-- Inner content -->
 <div class="left-content">
+
 	   <div class="mother-grid-inner">
-<!--header start here-->
-<?php include('included/header.php');?>
-<!--header end here-->
-		<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
-            </ol>
+
+<!--header File is included here-->
+<?php include('includes/header.php');?>
+
 <!--four-grids here -->
 		<div class="four-grids">
 					<div class="col-md-3 four-grid">
@@ -49,9 +51,9 @@ else{
 								<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>User</h3>
+								<h3>Total Users</h3>
 
-								<?php $sql = "SELECT id from tmsusers";
+								<?php $sql = "SELECT id from tblusers";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -66,11 +68,11 @@ $cnt=$query->rowCount();
 					<div class="col-md-3 four-grid">
 						<div class="four-agileinfo">
 							<div class="icon">
-								<i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-bookmark" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Bookings</h3>
-										<?php $sql1 = "SELECT BookingId from tmsbooking";
+								<h3>Total Bookings</h3>
+										<?php $sql1 = "SELECT BookingId from tblbooking";
 $query1 = $dbh -> prepare($sql1);
 $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
@@ -88,8 +90,8 @@ $cnt1=$query1->rowCount();
 								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Enquiries</h3>
-												<?php $sql2 = "SELECT id from tmsenquiry";
+								<h3>Total Enquiries</h3>
+												<?php $sql2 = "SELECT id from tblenquiry";
 $query2= $dbh -> prepare($sql2);
 $query2->execute();
 $results2=$query2->fetchAll(PDO::FETCH_OBJ);
@@ -104,11 +106,11 @@ $cnt2=$query2->rowCount();
 					<div class="col-md-3 four-grid">
 						<div class="four-wthree">
 							<div class="icon">
-								<i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-book" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
 								<h3>Toatal packages</h3>
-																	<?php $sql3 = "SELECT PackageId from tmstourpackages";
+																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
 $query3= $dbh -> prepare($sql3);
 $query3->execute();
 $results3=$query3->fetchAll(PDO::FETCH_OBJ);
@@ -127,11 +129,11 @@ $cnt3=$query3->rowCount();
 					<div class="col-md-3 four-grid">
 						<div class="four-w3ls">
 							<div class="icon">
-								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
+								<i class="glyphicon glyphicon-question-sign" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
 								<h3>Issues Riaised</h3>
-												<?php $sql5 = "SELECT id from tmsissues";
+												<?php $sql5 = "SELECT id from tblissues";
 $query5= $dbh -> prepare($sql5);
 $query5->execute();
 $results5=$query5->fetchAll(PDO::FETCH_OBJ);
@@ -154,11 +156,12 @@ $cnt5=$query5->rowCount();
 
 </div>
 <!--inner block end here-->
+<!--copy rights start here-->
 </div>
 </div>
 
 			<!--/sidebar-menu-->
-				<?php include('included/sidebarmenu.php');?>
+				<?php include('includes/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		
 							</div>
 							<script>
