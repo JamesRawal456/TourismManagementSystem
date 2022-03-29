@@ -51,7 +51,7 @@ else{
 							<div class="four-text">
 								<h3>User</h3>
 
-								<?php $sql = "SELECT id from tblusers";
+								<?php $sql = "SELECT id from tmsusers";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -70,7 +70,7 @@ $cnt=$query->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Bookings</h3>
-										<?php $sql1 = "SELECT BookingId from tblbooking";
+										<?php $sql1 = "SELECT BookingId from tmsbooking";
 $query1 = $dbh -> prepare($sql1);
 $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
@@ -89,7 +89,7 @@ $cnt1=$query1->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Enquiries</h3>
-												<?php $sql2 = "SELECT id from tblenquiry";
+												<?php $sql2 = "SELECT id from tmsenquiry";
 $query2= $dbh -> prepare($sql2);
 $query2->execute();
 $results2=$query2->fetchAll(PDO::FETCH_OBJ);
@@ -108,7 +108,7 @@ $cnt2=$query2->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Toatal packages</h3>
-																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
+																	<?php $sql3 = "SELECT PackageId from tmstourpackages";
 $query3= $dbh -> prepare($sql3);
 $query3->execute();
 $results3=$query3->fetchAll(PDO::FETCH_OBJ);
@@ -131,7 +131,7 @@ $cnt3=$query3->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Issues Riaised</h3>
-												<?php $sql5 = "SELECT id from tblissues";
+												<?php $sql5 = "SELECT id from tmsissues";
 $query5= $dbh -> prepare($sql5);
 $query5->execute();
 $results5=$query5->fetchAll(PDO::FETCH_OBJ);
@@ -154,13 +154,11 @@ $cnt5=$query5->rowCount();
 
 </div>
 <!--inner block end here-->
-<!--copy rights start here-->
-<?php include('includes/footer.php');?>
 </div>
 </div>
 
 			<!--/sidebar-menu-->
-				<?php include('includes/sidebarmenu.php');?>
+				<?php include('included/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		
 							</div>
 							<script>
