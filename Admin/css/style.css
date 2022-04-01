@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
     	font-family: 'Montserrat', sans-serif;
 }
 a {
-  color: #008DE7;
+  color: red;
   font-weight:400;
 }
 a:hover { transition: all 200ms ease-in-out; }
@@ -69,7 +69,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
 	vertical-align: middle;
 }
 .breadcrumb > li {
-    color: #e74c3c ! important;
+    color: rgb(43, 43, 113) ! important;
     font-size: 16px ! important;
     vertical-align: middle ! important;
 }
@@ -151,7 +151,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color:#333333;
+    background-color: #1b93e1;
     color: #aaabae;
     box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
 	-o-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
@@ -1816,7 +1816,7 @@ code {
 }
 .btn-primary {
     color: #fff;
-    background-color: #00bcd4;
+    background-color: rgb(165, 103, 103);
 }
 .btn-danger {
     color: #fff;
@@ -4297,7 +4297,7 @@ canvas#bar,canvas#line,canvas#pie {
 	margin-bottom: 0em;
 }
 .grid-form1 h2,.grid-form1 h3{
-    color: #1b93e1;
+    color: red;
     font-size:2em;
     margin-bottom: 1em;
 }

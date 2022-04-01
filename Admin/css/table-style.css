@@ -51,7 +51,7 @@ code.js:after {
 }
 
 table {
-  background: white;
+  background: wheat;
   border-collapse: collapse;
   margin: 1.25em 0 0;
   width: 100%;
@@ -72,8 +72,8 @@ table td {
 }
 
 table th {
-    background: #e74c3c;
-    color: #fff;
+    background: rgb(71, 71, 172);
+    color: white;
     text-transform: uppercase;
 }
 

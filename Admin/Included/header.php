@@ -12,6 +12,7 @@
 												<span class="prfil-img"><img src="Images/userss.png" alt=""> </span> 
 												<div class="user-name">
 													<p>Welcome</p>
+													<p>Admin</p>
 												</div>
 												<i class="fa fa-angle-down"></i>
 												<i class="fa fa-angle-up"></i>
