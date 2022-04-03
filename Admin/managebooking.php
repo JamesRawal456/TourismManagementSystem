@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include('includes/config.php');
+include('included/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
 header('location:index.php');
@@ -32,7 +32,7 @@ if(isset($_REQUEST['bckid']))
 $bcid=intval($_GET['bckid']);
 $status=1;
 $cancelby='a';
-$sql = "UPDATE tblbooking SET status=:status WHERE BookingId=:bcid";
+$sql = "UPDATE tmsbooking SET status=:status WHERE BookingId=:bcid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':bcid',$bcid, PDO::PARAM_STR);
@@ -108,18 +108,22 @@ $msg="Booking Confirm successfully";
 		</style>
 </head> 
 <body>
+
    <div class="page-container">
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-            <!--header start here-->
-				<?php include('includes/header.php');?>
+            <!--header file-->
+				<?php include('included/header.php');?>
 				     <div class="clearfix"> </div>	
 				</div>
-<!--heder end here-->
+			<!--heder end -->
+
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
             </ol>
+
+
 <div class="agile-grids">	
 				<!-- tables -->
 				<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
@@ -142,7 +146,7 @@ $msg="Booking Confirm successfully";
 						  </tr>
 						</thead>
 						<tbody>
-<?php $sql = "SELECT tmsbooking.BookingId as bookid,tmsusers.FullName as fname,tmsusers.MobileNumber as mnumber,tmsusers.EmailId as email,tmstourpackages.PackageName as pckname,tblbooking.PackageId as pid,tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tmsbooking.Comment as comment,tmsbooking.status as status,tmsbooking.CancelledBy as cancelby,tmsbooking.UpdationDate as upddate from tmsusers join  tmsbooking on  tmsbooking.UserEmail=tmsusers.EmailId join tmstourpackages on tmstourpackages.PackageId=tmsbooking.PackageId";
+<?php $sql = "SELECT tmsbooking.BookingId as bookid,tmsusers.FullName as fname,tmsusers.MobileNumber as mnumber,tmsusers.EmailId as email,tmstourpackages.PackageName as pckname,tmsbooking.PackageId as pid,tmsbooking.FromDate as fdate,tmsbooking.ToDate as tdate,tmsbooking.Comment as comment,tmsbooking.status as status,tmsbooking.CancelledBy as cancelby,tmsbooking.UpdationDate as upddate from tmsusers join  tmsbooking on  tmsbooking.UserEmail=tmsusers.EmailId join tmstourpackages on tmstourpackages.PackageId=tmsbooking.PackageId";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -156,7 +160,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->fname);?></td>
 							<td><?php echo htmlentities($result->mnumber);?></td>
 							<td><?php echo htmlentities($result->email);?></td>
-							<td><a href="update-package.php?pid=<?php echo htmlentities($result->pid);?>"><?php echo htmlentities($result->pckname);?></a></td>
+							<td><a href="updatepackage.php?pid=<?php echo htmlentities($result->pid);?>"><?php echo htmlentities($result->pckname);?></a></td>
 							<td><?php echo htmlentities($result->fdate);?> To <?php echo htmlentities($result->tdate);?></td>
 								<td><?php echo htmlentities($result->comment);?></td>
 								<td><?php if($result->status==0)
@@ -182,7 +186,7 @@ echo "Canceled by User at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
+<td><a href="managebookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
 <?php }?>
 
 						  </tr>
@@ -194,7 +198,7 @@ echo "Canceled by User at " .$result->upddate;
 
 				
 			</div>
-<!-- script-for sticky-nav -->
+<!-- sticky-nav -->
 		<script>
 		$(document).ready(function() {
 			 var navoffeset=$(".header-main").offset().top;
@@ -209,20 +213,19 @@ echo "Canceled by User at " .$result->upddate;
 			 
 		});
 		</script>
-		<!-- /script-for sticky-nav -->
+		<!-- sticky-nav -->
+
 <!--inner block start here-->
 <div class="inner-block">
 
 </div>
 <!--inner block end here-->
-<!--copy rights start here-->
-<?php include('includes/footer.php');?>
-<!--COPY rights end here-->
+
 </div>
 </div>
   <!--//content-inner-->
 		<!--/sidebar-menu-->
-						<?php include('includes/sidebarmenu.php');?>
+						<?php include('included/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		
 							</div>
 							<script>
@@ -239,7 +242,6 @@ echo "Canceled by User at " .$result->upddate;
 								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
 								setTimeout(function() {
 								  $("#menu span").css({"position":"relative"});
-								}, 400);
 							  }
 											
 											toggle = !toggle;

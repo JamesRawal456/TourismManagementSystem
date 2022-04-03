@@ -156,7 +156,6 @@ $cnt5=$query5->rowCount();
 
 </div>
 <!--inner block end here-->
-<!--copy rights start here-->
 </div>
 </div>
 
@@ -193,9 +192,12 @@ $cnt5=$query5->rowCount();
 <!-- morris JavaScript -->	
 <script src="js/raphael-min.js"></script>
 <script src="js/morris.js"></script>
+
+
+
 <script>
 	$(document).ready(function() {
-		//BOX BUTTON SHOW AND CLOSE
+		//For box button show and close
 	   jQuery('.small-graph-box').hover(function() {
 		  jQuery(this).find('.box-button').fadeIn('fast');
 	   }, function() {
