@@ -56,7 +56,7 @@ a:hover { transition: all 200ms ease-in-out; }
     width: 87%;
 }
 a.sidebar-icon:hover{
-	color:#1b93e1;
+	color:  white;
 }
 .page-container.sidebar-collapsed {
   transition: all 100ms linear;
@@ -108,7 +108,6 @@ li.breadcrumb-item i.fa.fa-angle-right {
    margin-right: 0em;
     margin-top: -8px;
 	color: #fff;
-    background: #1b93e1;
     border-radius: 0;
 }
 .page-container.sidebar-collapsed-back .sidebar-icon {
@@ -151,7 +150,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #1b93e1;
+    background-color: rgb(97, 97, 164);
     color: #aaabae;
     box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
 	-o-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
@@ -249,20 +248,20 @@ background-color:#00C6D7!important;
     width: 100%;
     padding: 15px 14px 15px;
     box-sizing: border-box;
-    background: #1b93e1;
+    background: rgb(97, 97, 164);
     text-align: center;
 }
 .sidebar-icon {
     margin-top: -2px;
-    border: 1px solid #1b93e1;
     text-align: right;
     line-height: 1;
     font-size: 19px;
     padding: 5px 10px;
     border-radius: 0px;
-    color: #1b93e1;
-    background: #fff;
+    color: white;
+    background:  rgb(97, 97, 164);
     float: none;
+    size: 50px;
 }
 ul#menu i {
     font-size: 1.1em;
@@ -5745,7 +5744,7 @@ table th, table td {
 	}
 	.logo1 {
 	    padding: 21px 0;
-		height: 63px;
+		height: 90px;
 		box-sizing: border-box;
 		transition: all 100ms ease-in-out;
 		transition-delay: 300ms;
