@@ -160,33 +160,7 @@ foreach($results as $result)
   <!--//content-inner-->
 		<!--/sidebar-menu-->
 						<?php include('included/sidebarmenu.php');?>
-							  <div class="clearfix"></div>		
-							</div>
-							<script>
-
-
-                            // Closes and opens sidebar menu on clicking icon in the top
-                            // ---------------------------------------------------------
-							var toggle = true;
-										
-							$(".sidebar-icon").click(function() {                
-							  if (toggle)
-							  {
-								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-								$("#menu span").css({"position":"absolute"});
-							  }
-							  else
-							  {
-								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-								setTimeout(function() {
-								  $("#menu span").css({"position":"relative"});
-								}, 400);
-							  }
-											
-											toggle = !toggle;
-										});
-                            // ---------------------------------------------------------
-							</script>
+						
 
 
 <script src="js/jquery.nicescroll.js"></script>
