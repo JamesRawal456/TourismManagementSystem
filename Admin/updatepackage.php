@@ -27,14 +27,16 @@ $query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
-$msg="Package Updated Successfully";
+$msg="Package has been Updated";
 }
 
 	?>
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>Package Update</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -69,16 +71,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head> 
 <body>
+
+
+
    <div class="page-container">
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-              <!--header start here-->
-<?php include('includes/header.php');?>
+              <!--header file -->
+<?php include('included/header.php');?>
 							
 				     <div class="clearfix"> </div>	
 				</div>
-<!--heder end here-->
+			  <!--header file-->
+
 	<ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
             </ol>
@@ -95,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from TblTourPackages where PackageId=:pid";
+$sql = "SELECT * from TmsTourPackages where PackageId=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
@@ -189,7 +195,7 @@ foreach($results as $result)
  	</div>
  	<!--//grid-->
 
-<!-- script-for sticky-nav -->
+<!-- sticky-nav -->
 		<script>
 		$(document).ready(function() {
 			 var navoffeset=$(".header-main").offset().top;
@@ -204,20 +210,20 @@ foreach($results as $result)
 			 
 		});
 		</script>
-		<!-- /script-for sticky-nav -->
+<!-- sticky-nav -->
+
+
 <!--inner block start here-->
 <div class="inner-block">
 
 </div>
 <!--inner block end here-->
-<!--copy rights start here-->
-<?php include('includes/footer.php');?>
-<!--COPY rights end here-->
+
 </div>
 </div>
   <!--//content-inner-->
 		<!--/sidebar-menu-->
-					<?php include('includes/sidebarmenu.php');?>
+					<?php include('included/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		
 							</div>
 							<script>
@@ -240,6 +246,8 @@ foreach($results as $result)
 											toggle = !toggle;
 										});
 							</script>
+
+
 <!--js -->
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>

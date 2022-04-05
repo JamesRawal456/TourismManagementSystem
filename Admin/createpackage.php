@@ -208,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
   <!--//content-inner-->
 		<!--/sidebar-menu-->
-					<?php include('includes/sidebarmenu.php');?>
+					<?php include('included/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		
 							</div>
 							<script>

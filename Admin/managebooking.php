@@ -247,12 +247,12 @@ echo "Canceled by User at " .$result->upddate;
 											toggle = !toggle;
 										});
 							</script>
-<!--js -->
+// <!--js -->
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
-<!-- Bootstrap Core JavaScript -->
+// <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
-   <!-- /Bootstrap Core JavaScript -->	   
+//    <!-- /Bootstrap Core JavaScript -->	   
 
 </body>
 </html>
