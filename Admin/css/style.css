@@ -55,9 +55,7 @@ a:hover { transition: all 200ms ease-in-out; }
     float: right;
     width: 87%;
 }
-a.sidebar-icon:hover{
-	color:  white;
-}
+
 .page-container.sidebar-collapsed {
   transition: all 100ms linear;
   transition-delay: 300ms;
@@ -108,6 +106,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
    margin-right: 0em;
     margin-top: -8px;
 	color: #fff;
+    background: #1b93e1;
     border-radius: 0;
 }
 .page-container.sidebar-collapsed-back .sidebar-icon {
@@ -196,7 +195,7 @@ label.col-sm-2.control-label {
 }
 #menu li a:hover {
   color: #ffffff;
-  background-color:#1b93e1;
+  background-color: rgb(97, 97, 164);
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
    border-left: 4px solid #4A4A4A;
 }
@@ -873,27 +872,7 @@ ul.dropdown-menu.drp-mnu li {
     padding: 0px;
 }
 /*--header strip end here-*/
-/*--copyrights start here--*/
-.copyrights {
-    padding: 1.5em 0em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    -o-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    background: #fff;
-}
-.copyrights p {
-    font-size: 1em;
-    color: #696969;
-    margin-bottom: 0;
-}
-.copyrights p a{
-    color: #1b93e1;
-}
-.copyrights p a:hover{
-    color:#696969;
-}
+
 /*--header --*/
 /*---four-grids-----*/ 
 .four-agileits {
@@ -5744,7 +5723,7 @@ table th, table td {
 	}
 	.logo1 {
 	    padding: 21px 0;
-		height: 90px;
+		height: 63px;
 		box-sizing: border-box;
 		transition: all 100ms ease-in-out;
 		transition-delay: 300ms;
