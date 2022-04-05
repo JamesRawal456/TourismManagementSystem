@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Package update </li>
+                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Package update </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
@@ -209,7 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!--//content-inner-->
 		<!--/sidebar-menu-->
 					<?php include('included/sidebarmenu.php');?>
-					
+
 							
 <!--js -->
 <script src="js/jquery.nicescroll.js"></script>

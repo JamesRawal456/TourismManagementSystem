@@ -77,7 +77,7 @@ else{
             <!--heder file-->
 
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Packages</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->

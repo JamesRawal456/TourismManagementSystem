@@ -106,7 +106,7 @@ $msg="Enquiry  successfully read";
 				</div>
             <!--heder file-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Enquiries</li>
+                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Enquiries</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->

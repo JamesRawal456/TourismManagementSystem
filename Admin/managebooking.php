@@ -120,7 +120,7 @@ $msg="Booking Confirm successfully";
 			<!--heder end -->
 
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Bookings</li>
             </ol>
 
 

@@ -111,12 +111,12 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 <div class="left-content">
 	   <div class="mother-grid-inner">
             <!--header file-->
-				<?php include('includes/header.php');?>
+				<?php include('included/header.php');?>
 				     <div class="clearfix"> </div>	
 				</div>
             <!--heder file -->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Issues</li>
+                <li class="breadcrumb-item"></i>Manage Issues</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
