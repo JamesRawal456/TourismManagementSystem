@@ -47,11 +47,6 @@ if(isset($post['delete']))
 
 
 
-
-
-
-
-
 ?>
 
 

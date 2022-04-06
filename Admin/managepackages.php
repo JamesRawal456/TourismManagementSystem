@@ -95,6 +95,7 @@ else{
 							<th>Price</th>
 							<th>Creation Date</th>
 							<th>Detail</th>
+							<th>Action</th>
 						  </tr>
 						</thead>
 						<tbody>
