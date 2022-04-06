@@ -86,14 +86,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <!--header file-->
 
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Update Tour Package </li>
+                <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Edit Tour Package </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Update Package</h3>
+  	       <h3>Edit Package</h3>
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
