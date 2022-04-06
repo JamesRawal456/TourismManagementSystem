@@ -30,7 +30,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="your Package Created";
+$msg="Package Created";
 }
 else 
 {
@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="left-content">
 	   <div class="mother-grid-inner">
               <!--header start here-->
-<?php include('includes/header.php');?>
+<?php include('included/header.php');?>
 							
 				     <div class="clearfix"> </div>	
 				</div>
