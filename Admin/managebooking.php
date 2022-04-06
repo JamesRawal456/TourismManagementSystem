@@ -7,7 +7,7 @@ if(strlen($_SESSION['alogin'])==0)
 header('location:index.php');
 }
 else{ 
-	// Code for cancelling a trip and also updating data
+	// Code for cancelling a booking
     // -----------------------------------------------------------------------------------------
 if(isset($_REQUEST['bkid']))
 	{
@@ -27,6 +27,9 @@ $msg="Booking Cancelled successfully";
 // -----------------------------------------------------------------------------------------------
 
 
+
+// Code for confirming a booking
+// ----------------------------------------------------------------------------------------------
 if(isset($_REQUEST['bckid']))
 	{
 $bcid=intval($_GET['bckid']);
@@ -40,6 +43,7 @@ $query -> execute();
 $msg="Booking Confirm successfully";
 }
 
+// --------------------------------------------------------------------------------------------
 
 
 ?>
@@ -186,7 +190,7 @@ echo "Canceled by User at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="managebookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="managebookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
+<td><a href="managebooking.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="managebooking.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
 <?php }?>
 
 						  </tr>
