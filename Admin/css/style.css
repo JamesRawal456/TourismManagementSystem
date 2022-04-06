@@ -841,7 +841,7 @@ i.fa.fa-angle-down{
     position: absolute;
     top: 34%;
     right: 8%;
-    color: #1b93e1;
+    color: rgb(103, 53, 103);
     font-size: 1.6em;
 }
 .profile_details ul li ul.dropdown-menu.drp-mnu {
