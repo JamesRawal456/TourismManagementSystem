@@ -379,7 +379,7 @@ span.logo-clr{
     -webkit-appearance: none;
     display: inline-block;
 }
-.w3-search-box input[type="submit"] {
+/* .w3-search-box input[type="submit"] {
     background: url(../images/search.png)no-repeat;
     width: 20px;
     height: 20px;
@@ -387,7 +387,7 @@ span.logo-clr{
    vertical-align: text-top;
     border: none;
     outline: none;
-}
+} */
 ::-webkit-input-placeholder{
    color:#7A7B78 !important;
 }
