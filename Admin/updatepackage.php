@@ -171,7 +171,7 @@ foreach($results as $result)
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Update</button>
+				<button type="submit" name="submit" class="btn-primary btn">Save</button>
 			</div>
 		</div>
 						
