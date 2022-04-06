@@ -30,7 +30,29 @@ $query->execute();
 $msg="Package Edited";
 }
 
-	?>
+
+
+$jit=intval($_GET["jit"]);
+if(isset($post['delete']))
+{
+	$sql = "delete tmstourpackages  WHERE  packageId=:jit";
+	$query = $dbh->prepare($sql);
+	$query-> bindParam(':jit',$bid, PDO::PARAM_STR);
+	$query -> execute();
+	$msg="Package deleted";
+}
+
+
+
+
+
+
+
+
+
+
+
+?>
 
 
 <!DOCTYPE HTML>
@@ -157,7 +179,7 @@ foreach($results as $result)
 <div class="form-group">
 <label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
 <div class="col-sm-8">
-<img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
+<img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="changeimage.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
 </div>
 </div>
 
@@ -172,7 +194,10 @@ foreach($results as $result)
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 				<button type="submit" name="submit" class="btn-primary btn">Save</button>
+				<button type="submit" value="delete" name="delete" class="btn-primary btn">Delete</button>
 			</div>
+
+			
 		</div>
 						
 					
