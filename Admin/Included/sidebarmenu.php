@@ -11,7 +11,6 @@
 										   <ul id="menu-academico-sub" >
 										   <li id="menu-academico-avaliacoes" ><a href="createpackage.php">add</a></li>
 											<li id="menu-academico-avaliacoes" ><a href="managepackages.php">Manage</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="deletepackage.php">delete</a></li>
 										  </ul>
 										</li>
 									<li id="menu-academico" ><a href="managebooking.php"><i class="fa fa-users" aria-hidden="true"></i><span>Manage Booking</span><div class="clearfix"></div></a></li>
