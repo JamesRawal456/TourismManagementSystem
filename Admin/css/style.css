@@ -4523,7 +4523,7 @@ label.control-label {
 .back a {
     display: block;
     font-size: 1.2em;
-    color: #e74c3c;
+    color: white;
     text-decoration: none;
     padding-top: 6px;
     text-align: center;
@@ -4692,7 +4692,7 @@ ul.bt-list {
 }
 /*---signin-----*/
 .main-wthree{
-		background:#3b8fc5;
+		background: crimson;
 		min-height:794px;
 }
 span.prfil-img img {
