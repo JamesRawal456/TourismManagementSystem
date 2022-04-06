@@ -27,7 +27,7 @@ $query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
-$msg="Package has been Updated";
+$msg="Package Edited";
 }
 
 	?>

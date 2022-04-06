@@ -117,7 +117,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->PackageLocation);?></td>
 							<td>$<?php echo htmlentities($result->PackagePrice);?></td>
 							<td><?php echo htmlentities($result->Creationdate);?></td>
-							<td><a href="updatepackage.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">update</button></a></td>
+							<td><a href="updatepackage.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">Save</button></a></td>
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
 						</tbody>
