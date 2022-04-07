@@ -32,19 +32,6 @@ $msg="Package Edited";
 
 
 
-$jit=intval($_GET["jit"]);
-if(isset($post['delete']))
-{
-	$sql = "delete tmstourpackages  WHERE  packageId=:jit";
-	$query = $dbh->prepare($sql);
-	$query-> bindParam(':jit',$bid, PDO::PARAM_STR);
-	$query -> execute();
-	$msg="Package deleted";
-}
-
-
-
-
 
 
 ?>
