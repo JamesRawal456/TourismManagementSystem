@@ -875,12 +875,12 @@ ul.dropdown-menu.drp-mnu li {
 /*--header --*/
 /*---four-grids-----*/ 
 .four-agileits {
-    background: red;
+    background: #a2d200;
     text-align: center;
     padding: 2em 0;
 }
 .four-agileinfo {
-    background: pink;
+    background: #a2d200;
     padding: 2em 0;
     text-align: center;
 }
@@ -890,7 +890,7 @@ ul.dropdown-menu.drp-mnu li {
     text-align: center;
 }
 .four-wthree {
-    background: #8e44ad;
+    background: #a2d200;
     padding: 2em 0;
     text-align: center;
 }
