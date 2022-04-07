@@ -161,7 +161,7 @@ foreach($results as $result)
 <div class="form-group">
 <label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
 <div class="col-sm-8">
-<img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="changeimage.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
+<img src="packageimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="changeimage.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
 </div>
 </div>
 
