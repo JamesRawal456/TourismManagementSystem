@@ -5,7 +5,7 @@
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','infopackage');
+define('DB_NAME','tmsalldata');
 
 
 // Database Connection is eastablished
