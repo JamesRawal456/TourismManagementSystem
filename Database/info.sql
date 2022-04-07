@@ -1,6 +1,6 @@
 -- Password: Admin 
 -- Username: Admin
--- Database name: tmsdata
+-- Database name: tmsalldata
 
 
 
