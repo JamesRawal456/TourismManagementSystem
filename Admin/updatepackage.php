@@ -189,7 +189,6 @@ foreach($results as $result)
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 				<button type="submit" name="submit" class="btn-primary btn">Save</button>
-				<button type="submit" value="delete" name="delete" class="btn-primary btn">Delete</button>
 			</div>
 
 			
