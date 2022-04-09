@@ -79,7 +79,7 @@ else{
 				<?php include('included/header.php');?>
 				     <div class="clearfix"> </div>	
 				</div>
-            <!--heder end -->
+           <!--heder end -->
 
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Users</li>
