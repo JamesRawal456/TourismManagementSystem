@@ -74,7 +74,7 @@ else{
 				<?php include('included/header.php');?>
 				     <div class="clearfix"> </div>	
 				</div>
-            <!--heder file-->
+         <!--heder file-->
 
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Packages</li>
