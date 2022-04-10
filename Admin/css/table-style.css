@@ -78,8 +78,8 @@ table th {
 }
 
 table tr td {
-    background: #f3faff;
-    color: #424242;
+    background: #e4ecf2;
+    color: #4a4a4a;
 }
 
 table tr:nth-of-type(2n+2) td {
