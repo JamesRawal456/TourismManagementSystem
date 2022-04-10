@@ -219,7 +219,7 @@ foreach($results as $result)
 <!-- sticky-nav -->
 
 
-<!--inner block start here-->
+<!--inner block start  here-->
 <div class="inner-block">
 
 </div>

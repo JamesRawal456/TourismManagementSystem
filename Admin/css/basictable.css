@@ -1,8 +1,4 @@
-/*
- * jQuery Basic Table
- * Author: Jerry Low
- */
-
+/* designing table */
 table.bt thead,
 table.bt tbody th {
   display: none;
@@ -20,8 +16,8 @@ table.bt tbody td {
   vertical-align: top;
 
   /* IE 9 */
-  float: left\9;
-  width: 100%\9;
+  float: left;
+  width: 100%;
 }
 
 table.bt tfoot th::before,
@@ -41,7 +37,7 @@ table.bt tfoot td.bt-hide,
 table.bt tbody td.bt-hide {
   display: none;
 }
-
+ 
 table.bt tfoot th .bt-content,
 table.bt tfoot td .bt-content,
 table.bt tbody td .bt-content {
