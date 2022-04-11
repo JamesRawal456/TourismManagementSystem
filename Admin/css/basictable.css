@@ -49,3 +49,6 @@ table.bt tbody td .bt-content {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+.ping{
+  float: inline-end;
+}
