@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 473e10412a1836836d05b45751ae819ef2fc585c
 p.credits {
   font-size: .8125rem;
   margin-top: 6em;
@@ -138,8 +142,8 @@ table.bt tbody td:last-of-type .bt-content {
     vertical-align: top;
 
     /* IE 9 */
-    float: left\9;
-    width: 100%\9;
+    float: left;
+    width: 100%;
   }
 
   #table-no-resize tbody td:before {

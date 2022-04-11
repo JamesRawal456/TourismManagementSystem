@@ -1,4 +1,4 @@
-/* designing table */
+/* designing tables */
 table.bt thead,
 table.bt tbody th {
   display: none;
@@ -48,4 +48,7 @@ table.bt tbody td .bt-content {
   max-height: 310px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+.ping{
+  float: inline-end;
 }

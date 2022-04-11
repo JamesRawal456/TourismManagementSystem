@@ -27,7 +27,7 @@ else{
 <!-- //jQuery -->
 
 
-<!-- tables files -->
+<!-- table files -->
 <link rel="stylesheet" type="text/css" href="css/table-style.css" />
 <link rel="stylesheet" type="text/css" href="css/basictable.css" />
 <script type="text/javascript" src="js/jquery.basictable.min.js"></script>
