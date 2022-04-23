@@ -144,7 +144,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: rgb(97, 97, 164);
+    background-color: #333333;
     color: #aaabae;
     box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
 	-o-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
@@ -242,7 +242,7 @@ background-color:#00C6D7!important;
     width: 100%;
     padding: 15px 14px 15px;
     box-sizing: border-box;
-    background: rgb(97, 97, 164);
+    background: #1b93e1;
     text-align: center;
 }
 .sidebar-icon {
@@ -253,7 +253,7 @@ background-color:#00C6D7!important;
     padding: 5px 10px;
     border-radius: 0px;
     color: white;
-    background:  rgb(97, 97, 164);
+    background:  #1b93e1;
     float: none;
 }
 ul#menu i {
@@ -328,12 +328,12 @@ li#menu-academico{
 .profile_details {
     float: left;
     width: 24.25%;
-    background: rgb(97, 97, 164);
+    background: rgb(71,71,172);
     text-align: center;
     padding: 0.3em 1em;
 }
 .logo-w3-agile {
-    background:  rgb(171, 58, 80);
+    background:  rgb(71,71,172);
     float: left;
     width: 65.25%;
     text-align: center;
@@ -870,22 +870,22 @@ ul.dropdown-menu.drp-mnu li {
 /*--header --*/
 /*---four-grids-----*/ 
 .four-agileits {
-    background: rgb(97, 97, 164);
+    background: rgb(71,71,172);
     text-align: center;
     padding: 2em 0;
 }
 .four-agileinfo {
-    background: rgb(97, 97, 164);
+    background: rgb(71,71,172);
     padding: 2em 0;
     text-align: center;
 }
 .four-w3ls {
-    background: rgb(97, 97, 164);
+    background: rgb(71,71,172);
     padding: 2em 0;
     text-align: center;
 }
 .four-wthree {
-    background: rgb(97, 97, 164);
+    background: rgb(71,71,172);
     padding: 2em 0;
     text-align: center;
 }
@@ -4687,7 +4687,7 @@ ul.bt-list {
 }
 /*---signin-----*/
 .main-wthree{
-		background: crimson;
+		background: rgb(71,71,172);
 		min-height:794px;
 }
 span.prfil-img img {
