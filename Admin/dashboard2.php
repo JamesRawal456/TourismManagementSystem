@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="css/bootdash.css" rel='stylesheet' type='text/css' />
+    <link href="css/test.css" rel='stylesheet' type='text/css' /> 
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -15,12 +16,12 @@
         <!-- start sidebar -->
 
         <?php 
-            include "component/sidebar.php";
-            include 'conixion.php';
-            $nbr_students = $con->query("SELECT * FROM students_list");
+            // include "component/sidebar.php";
+            include "included/config.php";
+            $nbr_students = $con->query("SELECT * FROM tmsbooking");
             $nbr_students = $nbr_students->rowCount();
 
-            $nbr_cours = $con->query("SELECT * FROM courses");
+            $nbr_cours = $con->query("SELECT * FROM tmsusers");
             $nbr_cours = $nbr_cours->rowCount();
 
 
@@ -30,7 +31,7 @@
         <!-- start content page -->
         <div class="container-fluid px">
         <?php 
-            include "component/header.php";
+            // include "component/header.php";
         ?>
             <div class="cards row gap-3 justify-content-center mt-5">
                 <div class=" card__items card__items--blue col-md-3 position-relative">
@@ -75,8 +76,8 @@
         </div>
         <!-- end contentpage -->
     </main>
-    <script src="../js/script.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="js/sccs.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
