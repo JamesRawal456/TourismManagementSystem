@@ -15,7 +15,7 @@
         <!-- start sidebar -->
 
         <?php 
-            // include "component/sidebar.php";
+            include "included/sidebarmenuv2.php";
             include "included/config.php";
             $nbr_students = $con->query("SELECT * FROM tmsbooking");
             $nbr_students = $nbr_students->rowCount();
@@ -30,7 +30,7 @@
         <!-- start content page -->
         <div class="container-fluid px">
         <?php 
-            // include "component/header.php";
+            include "included/header.php";
         ?>
             <div class="cards row gap-3 justify-content-center mt-5">
                 <div class=" card__items card__items--blue col-md-3 position-relative">
