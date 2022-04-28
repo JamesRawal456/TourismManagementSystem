@@ -75,11 +75,7 @@ else{
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-            <!--header -->
-				<?php include('included/header.php');?>
-				     <div class="clearfix"> </div>	
-				</div>
-           <!--heder end -->
+
 
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Users</li>
@@ -103,7 +99,7 @@ else{
 						</thead>
 						<tbody>
 <?php $sql = "SELECT * from tmsusers";
-$query = $dbh -> prepare($sql);
+$query = $con -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
@@ -157,9 +153,7 @@ foreach($results as $result)
 </div>
 
 
-  <!--//content-inner-->
-		<!--/sidebar-menu-->
-						<?php include('included/sidebarmenu.php');?>
+
 						
 
 

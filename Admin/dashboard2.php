@@ -17,11 +17,20 @@
         <?php 
             include "included/sidebarmenuv2.php";
             include "included/config.php";
-            $nbr_students = $con->query("SELECT * FROM tmsbooking");
-            $nbr_students = $nbr_students->rowCount();
+            $nbr_users = $con->query("SELECT * FROM tmsusers");
+            $nbr_users = $nbr_users->rowCount();
 
-            $nbr_cours = $con->query("SELECT * FROM tmsusers");
-            $nbr_cours = $nbr_cours->rowCount();
+            $nbr_booking = $con->query("SELECT * FROM tmsbooking");
+            $nbr_booking = $nbr_booking->rowCount();
+
+            $nbr_enquiry = $con->query("SELECT * FROM tmsenquiry");
+            $nbr_enquiry = $nbr_enquiry->rowCount();
+
+            $nbr_packages = $con->query("SELECT * FROM tmstourpackages");
+            $nbr_packages = $nbr_packages->rowCount();
+
+            $nbr_issues = $con->query("SELECT * FROM tmsissues");
+            $nbr_issues = $nbr_issues->rowCount();
 
 
         ?>
@@ -35,41 +44,54 @@
             <div class="cards row gap-3 justify-content-center mt-5">
                 <div class=" card__items card__items--blue col-md-3 position-relative">
                     <div class="card__students d-flex flex-column gap-2 mt-3">
-                        <i class="far fa-graduation-cap h3"></i>
-                        <span>Students</span>
+                        <i class="far fa-user h3"></i>
+                        <span>Total Users</span>
                     </div>
                     <div class="card__nbr-students">
-                        <span class="h5 fw-bold nbr"><?php echo $nbr_students; ?></span>
+                        <span class="h5 fw-bold nbr"><?php echo $nbr_users; ?></span>
                     </div>
                 </div>
 
                 <div class=" card__items card__items--rose col-md-3 position-relative">
                     <div class="card__Course d-flex flex-column gap-2 mt-3">
                         <i class="fal fa-bookmark h3"></i>
-                        <span>Course</span>
+                        <span>Bookings</span>
                     </div>
                     <div class="card__nbr-course">
-                        <span class="h5 fw-bold nbr"><?php echo $nbr_cours; ?></span>
+                        <span class="h5 fw-bold nbr"><?php echo $nbr_booking; ?></span>
                     </div>
                 </div>
 
                 <div class=" card__items card__items--yellow col-md-3 position-relative">
                     <div class="card__payments d-flex flex-column gap-2 mt-3">
                         <i class="fal fa-usd-square h3"></i>
-                        <span>Payments</span>
+                        <span>Enquiries</span>
                     </div>
                     <div class="card__payments">
-                        <span class="h5 fw-bold nbr">DHS 556,000</span>
+                        <span class="h5 fw-bold nbr"><?php echo $nbr_enquiry; ?></span>
                     </div>
                 </div>
 
                 <div class="card__items card__items--gradient col-md-3 position-relative">
                     <div class="card__users d-flex flex-column gap-2 mt-3">
-                        <i class="fal fa-user h3"></i>
-                        <span>Users</span>
+                        <i class="fal fa-book h3"></i>
+                        <span>Total Packages</span>
                     </div>
-                    <span class="h5 fw-bold nbr">3</span>
+                    <span class="h5 fw-bold nbr"><?php echo $nbr_enquiry; ?></span>
                 </div>
+
+                <div class=" card__items card__items--rose col-md-3 position-relative">
+                    <div class="card__Course d-flex flex-column gap-2 mt-3">
+                        <i class="fal fa-question-circle h3"></i>
+                        <span>Issues Raised</span>
+                    </div>
+                    <div class="card__nbr-course">
+                        <span class="h5 fw-bold nbr"><?php echo $nbr_issues; ?></span>
+                    </div>
+                </div>
+
+
+              
             </div>
 
         </div>

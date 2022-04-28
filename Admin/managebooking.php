@@ -15,7 +15,7 @@ $bid=intval($_GET['bkid']);
 $status=2;
 $cancelby='a';
 $sql = "UPDATE tmsbooking SET status=:status,CancelledBy=:cancelby WHERE  BookingId=:bid";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query -> bindParam(':cancelby',$cancelby , PDO::PARAM_STR);
 $query-> bindParam(':bid',$bid, PDO::PARAM_STR);
@@ -36,7 +36,7 @@ $bcid=intval($_GET['bckid']);
 $status=1;
 $cancelby='a';
 $sql = "UPDATE tmsbooking SET status=:status WHERE BookingId=:bcid";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':bcid',$bcid, PDO::PARAM_STR);
 $query -> execute();
@@ -117,11 +117,7 @@ $msg="Booking Confirm successfully";
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-            <!--header file-->
-				<?php include('included/header.php');?>
-				     <div class="clearfix"> </div>	
-				</div>
-			<!--heder end -->
+    
 
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Bookings</li>
@@ -151,7 +147,7 @@ $msg="Booking Confirm successfully";
 						</thead>
 						<tbody>
 <?php $sql = "SELECT tmsbooking.BookingId as bookid,tmsusers.FullName as fname,tmsusers.MobileNumber as mnumber,tmsusers.EmailId as email,tmstourpackages.PackageName as pckname,tmsbooking.PackageId as pid,tmsbooking.FromDate as fdate,tmsbooking.ToDate as tdate,tmsbooking.Comment as comment,tmsbooking.status as status,tmsbooking.CancelledBy as cancelby,tmsbooking.UpdationDate as upddate from tmsusers join  tmsbooking on  tmsbooking.UserEmail=tmsusers.EmailId join tmstourpackages on tmstourpackages.PackageId=tmsbooking.PackageId";
-$query = $dbh -> prepare($sql);
+$query = $con -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
@@ -227,16 +223,14 @@ echo "Canceled by User at " .$result->upddate;
 
 </div>
 </div>
-  <!--//content-inner-->
-		<!--/sidebar-menu-->
-						<?php include('included/sidebarmenu.php');?>
+
 						
-// <!--js -->
+<!--js -->
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
-// <!-- Bootstrap Core JavaScript -->
+ <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
-//    <!-- /Bootstrap Core JavaScript -->	   
+   <!-- /Bootstrap Core JavaScript -->	   
 
 </body>
 </html>

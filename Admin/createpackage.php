@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="left-content">
 	   <div class="mother-grid-inner">
               <!--header start here-->
-<?php include('included/header.php');?>
+
 							
 				     <div class="clearfix"> </div>	
 				</div>
@@ -206,9 +206,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--inner block end here-->
 </div>
 </div>
-  <!--//content-inner-->
-		<!--/sidebar-menu-->
-					<?php include('included/sidebarmenu.php');?>
+
 
 							
 <!--js -->

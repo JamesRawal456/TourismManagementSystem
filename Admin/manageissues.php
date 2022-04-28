@@ -110,11 +110,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-            <!--header file-->
-				<?php include('included/header.php');?>
-				     <div class="clearfix"> </div>	
-				</div>
-            <!--heder file -->
+
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"></i>Manage Issues</li>
             </ol>
@@ -141,7 +137,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 						</thead>
 						<tbody>
 <?php $sql = "SELECT tmsissues.id as id,tmsusers.FullName as fname,tmsusers.MobileNumber as mnumber,tmsusers.EmailId as email,tmsissues.Issue as issue,tmsissues.Description as Description,tmsissues.PostingDate as PostingDate from tmsissues join tmsusers on tmsusers.EmailId=tmsissues.UserEmail";
-$query = $dbh -> prepare($sql);
+$query = $con -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 
@@ -197,9 +193,7 @@ foreach($results as $result)
 
 </div>
 </div>
-  <!--//content-inner-->
-		<!--/sidebar-menu-->
-						<?php include('included/sidebarmenu.php');?>
+
 							
 <!--js -->
 <script src="js/jquery.nicescroll.js"></script>

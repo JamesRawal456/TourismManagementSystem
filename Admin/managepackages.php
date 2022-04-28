@@ -70,11 +70,7 @@ else{
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-            <!--header file-->
-				<?php include('included/header.php');?>
-				     <div class="clearfix"> </div>	
-				</div>
-         <!--heder file-->
+
 
 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Manage Packages</li>
@@ -101,7 +97,7 @@ else{
 
 
 <?php $sql = "SELECT * from TmsTourPackages";
-$query = $dbh -> prepare($sql);
+$query = $con -> prepare($sql);
 //$query -> bindParam(':city', $city, PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -155,11 +151,7 @@ foreach($results as $result)
 </div>
 
 
-  <!--//content-inner-->
-		<!--sidebar-menu-->
-						<?php include('included/sidebarmenu.php');?>
-						
-        <!-- Sidebar menu -->
+
 
 
 <!--js -->
