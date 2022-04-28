@@ -68,7 +68,7 @@ input[type="email"]::placeholder,input[type="password"]::placeholder{
 /* start dashboard */
 /* start sidebar */
 .bg-sidebar{
-    background-color: #FAFFC1;
+    background-color: rgb(71,71,172);
     transition: margin 0.6s ease-in-out;
     z-index: 1;
 }
