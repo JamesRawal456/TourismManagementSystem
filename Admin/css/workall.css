@@ -3,80 +3,39 @@
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
 }
-.alert{
-    height: 30px !important;
-    padding: 3px 3px;
-    font-size: 15px;
-}
-.bg-sign-in{
-    background:linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
-    height:100vh;
-}
-.form-sign-in,.sign-up{
-    border-radius: 10px;
-    width: 380px;
-}
+
 
 .bg-show{
     display: block !important;
     z-index: 0;
 }
-.bg{
-    background-color: rgba(0, 0, 0, 0.575);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    cursor: pointer;
-    display: none;
-}
-.register{
-    background: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -1000px;
-    transform: translate(-190px,-260px);
-    transition: 1s ease-out;
-}
-.register-active{
-    margin-top:0;
-    transition: 1s ease-out;
-}
-button[type="submit"]{
-    background-color: #00C1FE;
-}
+
 .E-classe {
     border-left:solid 6px #00C1FE;
 }
-.bg-sign-in p,.bg-sign-in label{
-    font-size: 14px;
-    line-height:17,07px;
-    font-weight: 400;
-    color:#6C6C6C;
-}
-input[type="email"]::placeholder,input[type="password"]::placeholder{
-    font-size: 12px;
-    line-height: 15px;
-    color: #CDCDCD;
-}
-.sign-in{
-    font-size: 22px;
-    line-height: 27px;
-    font-weight: 600;
-}
+
 /* start dashboard */
 /* start sidebar */
 .bg-sidebar{
     background-color: rgb(71,71,172);
     transition: margin 0.6s ease-in-out;
     z-index: 1;
+    color: wheat;
 }
 .bg-content{
     background:#F8F8F8;
+    
 }
 .h7{
     font-size: 14px;
+}
+
+.h8{
+    font-size: 20px;
+}
+
+.colors{
+    color: wheat;
 }
 /* end sidebar */
 /* start cards */
