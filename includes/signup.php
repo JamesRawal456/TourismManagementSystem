@@ -27,7 +27,7 @@ header('location:thankyou.php');
 }
 ?>
 <!--Javascript for check email availabilty-->
-<script>
+<!-- <script>
 function checkAvailability() {
 
 $("#loaderIcon").show();
@@ -42,7 +42,7 @@ $("#loaderIcon").hide();
 error:function (){}
 });
 }
-</script>
+</script> -->
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
