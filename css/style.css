@@ -52,7 +52,7 @@ i.fa.fa-home {
     font-size: 24px;
 }
 .top-header {
-    background-color: #2126b8;
+    background-color: #34ad00;
     border-bottom: 0 none;
 	height: 36px;
     line-height: 35px;
@@ -212,7 +212,7 @@ button.seabtn {
 	 text-indent: 0;
     padding: 6px 20px;
     color: #fff;
-    background-color:#2126b8;
+    background-color:#34ad00;
     border: 0;
     border-radius: 2px;
     -webkit-transition: all .2s;
@@ -423,7 +423,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#4CFF00;
 }
 .footer-btm {
-    background:#4CB320;
+    background:#34ad00;
     padding: 0.5em 0;
 	text-align:center;
 }
