@@ -1,7 +1,7 @@
 
 html, body{
 	font-size: 100%;
-	background: #fff;
+	background: #FFF;
 	font-family: 'Open Sans', sans-serif;
 }
 body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
@@ -37,7 +37,7 @@ label{
 }
 /*-- top-header --*/
 .logo a {
-    color: #3F84B1;
+    color: #000000;
     letter-spacing: 1px;
     font-size: 2em;
     font-weight: 400;
@@ -46,13 +46,13 @@ label{
     font-family: 'Oswald', sans-serif;
 }
 .logo span {
-    color:#34ad00;
+    color:#000000;
 }
 i.fa.fa-home {
     font-size: 24px;
 }
 .top-header {
-    background-color: #3F84B1;
+    background-color: #2126b8;
     border-bottom: 0 none;
 	height: 36px;
     line-height: 35px;
@@ -212,7 +212,7 @@ button.seabtn {
 	 text-indent: 0;
     padding: 6px 20px;
     color: #fff;
-    background-color:#34ad00;
+    background-color:#2126b8;
     border: 0;
     border-radius: 2px;
     -webkit-transition: all .2s;
@@ -373,7 +373,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
 .holiday h3 {
     font-size: 2em;
     font-weight: 700;
-    color: #34ad00;
+    color: #000000;
 }
 .holiday p {
     font-size: 1.2em;
