@@ -87,7 +87,7 @@ $error="Something went wrong. Please try again";
 	<div class="container">
 										<?php 
 $pagetype=$_GET['type'];
-$sql = "SELECT type,detail from tblpages where type=:pagetype";
+$sql = "SELECT type,detail from tmspages where type=:pagetype";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':pagetype',$pagetype,PDO::PARAM_STR);
 $query->execute();
