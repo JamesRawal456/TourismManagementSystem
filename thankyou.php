@@ -51,7 +51,7 @@ include('includes/config.php');
 	</div>
 </div>
 <!--- /contact ---->
-<?php include('includes/footer.php');?>
+
 <!-- sign -->
 <?php include('includes/signup.php');?>	
 <!-- signin -->

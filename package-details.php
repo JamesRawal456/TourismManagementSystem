@@ -167,8 +167,7 @@ foreach($results as $result)
 	</div>
 </div>
 <!--- /selectroom ---->
-<<!--- /footer-top ---->
-<?php include('includes/footer.php');?>
+
 <!-- signup -->
 <?php include('includes/signup.php');?>			
 <!-- //signu -->

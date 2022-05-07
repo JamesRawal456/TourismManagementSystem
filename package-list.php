@@ -79,8 +79,7 @@ foreach($results as $result)
 </div>
 <!--- /rooms ---->
 
-<!--- /footer-top ---->
-<?php include('includes/footer.php');?>
+
 <!-- signup -->
 <?php include('includes/signup.php');?>			
 <!-- //signu -->

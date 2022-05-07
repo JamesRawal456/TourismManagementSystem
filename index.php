@@ -123,7 +123,6 @@ foreach($results as $result)
 	</div>
 </div>
 
-<?php include('includes/footer.php');?>
 <!-- signup -->
 <?php include('includes/signup.php');?>			
 <!-- //signu -->
