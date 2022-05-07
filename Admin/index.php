@@ -79,6 +79,7 @@ if (isset($_POST['login'])) {
 					</div>
 					<div class="login-w3">
 						<input type="submit" class="login" name="login" value="Sign In">
+						<a href="../index.php">Back to home</a>
 					</div>
 			</div>
 			<div class="right">
@@ -87,6 +88,7 @@ if (isset($_POST['login'])) {
 				</div>
 			</div>
 			</form>
+
 		</div>
 	</div>
 	<!-- <div class="main-wthree">
