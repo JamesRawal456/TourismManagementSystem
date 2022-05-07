@@ -135,13 +135,14 @@ i.fa.fa-lock {
 /*-- /header --*/
 /*-- banner --*/
 .banner {
-    background: url(../images/3.jpg)no-repeat;
+    background: url(../images/travel.jpg);
+    repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 430px;
+    min-height: 500px;
 }
 .banner h1 {
     font-size: 50px;
@@ -445,13 +446,13 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
 /*-- /footer --*/
 /*-- bus --*/
 .banner-1 {
-    background: url(../images/3.jpg)no-repeat;
+    background: url(../images/travel.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height:200px;
+    min-height:400px;
 }
 .banner-1 h1 {
     font-size: 50px;
@@ -773,13 +774,14 @@ i.fa.fa-gift{
     min-height: 430px;
 }
 .banner-3 {
-    background: url(../images/6.jpg)no-repeat;
+    background: url(../images/package1.jpg);
+    repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height:200px;
+    min-height:500px;
 }
 .banner-2 h1 {
     font-size: 50px;
