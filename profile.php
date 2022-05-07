@@ -13,7 +13,7 @@ $name=$_POST['name'];
 $mobileno=$_POST['mobileno'];
 $email=$_SESSION['login'];
 
-$sql="update tblusers set FullName=:name,MobileNumber=:mobileno where EmailId=:email";
+$sql="update tmsusers set FullName=:name,MobileNumber=:mobileno where EmailId=:email";
 $query = $dbh->prepare($sql);
 $query->bindParam(':name',$name,PDO::PARAM_STR);
 $query->bindParam(':mobileno',$mobileno,PDO::PARAM_STR);
@@ -86,7 +86,7 @@ $msg="Profile Updated Successfully";
 
 <?php 
 $useremail=$_SESSION['login'];
-$sql = "SELECT * from tblusers where EmailId=:useremail";
+$sql = "SELECT * from tmsusers where EmailId=:useremail";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':useremail',$useremail, PDO::PARAM_STR);
 $query->execute();
