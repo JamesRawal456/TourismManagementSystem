@@ -6,14 +6,14 @@ $fname=$_POST['fname'];
 $mnumber=$_POST['mobilenumber'];
 $email=$_POST['email'];
 $password=md5($_POST['password']);
-$sql="INSERT INTO  tblusers(FullName,MobileNumber,EmailId,Password) VALUES(:fname,:mnumber,:email,:password)";
-$query = $dbh->prepare($sql);
+$sql="INSERT INTO  tmsusers(FullName,MobileNumber,EmailId,Password) VALUES(:fname,:mnumber,:email,:password)";
+$query = $con->prepare($sql);
 $query->bindParam(':fname',$fname,PDO::PARAM_STR);
 $query->bindParam(':mnumber',$mnumber,PDO::PARAM_STR);
 $query->bindParam(':email',$email,PDO::PARAM_STR);
 $query->bindParam(':password',$password,PDO::PARAM_STR);
 $query->execute();
-$lastInsertId = $dbh->lastInsertId();
+$lastInsertId = $con->lastInsertId();
 if($lastInsertId)
 {
 $_SESSION['msg']="You are Scuccessfully registered. Now you can login ";

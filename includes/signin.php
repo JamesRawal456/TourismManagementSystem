@@ -4,8 +4,8 @@ if(isset($_POST['signin']))
 {
 $email=$_POST['email'];
 $password=md5($_POST['password']);
-$sql ="SELECT EmailId,Password FROM tblusers WHERE EmailId=:email and Password=:password";
-$query= $dbh -> prepare($sql);
+$sql ="SELECT EmailId,Password FROM tmsusers WHERE EmailId=:email and Password=:password";
+$query= $con -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
 $query-> execute();
@@ -42,7 +42,7 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 											</div>
 									<div class="login-right">
 										<form method="post">
-											<h3>Signin with your account </h3>
+											<h3>Sign in with your account </h3>
 	<input type="text" name="email" id="email" placeholder="Enter your Email"  required="">	
 	<input type="password" name="password" id="password" placeholder="Password" value="" required="">	
 											<h4><a href="forgot-password.php">Forgot password</a></h4>
