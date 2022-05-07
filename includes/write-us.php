@@ -5,13 +5,13 @@ if(isset($_POST['submit']))
 $issue=$_POST['issue'];
 $description=$_POST['description'];
 $email=$_SESSION['login'];
-$sql="INSERT INTO  tblissues(UserEmail,Issue,Description) VALUES(:email,:issue,:description)";
-$query = $dbh->prepare($sql);
+$sql="INSERT INTO  tmsissues(UserEmail,Issue,Description) VALUES(:email,:issue,:description)";
+$query = $con->prepare($sql);
 $query->bindParam(':issue',$issue,PDO::PARAM_STR);
 $query->bindParam(':description',$description,PDO::PARAM_STR);
 $query->bindParam(':email',$email,PDO::PARAM_STR);
 $query->execute();
-$lastInsertId = $dbh->lastInsertId();
+$lastInsertId = $con->lastInsertId();
 if($lastInsertId)
 {
 $_SESSION['msg']="Info successfully submited ";
