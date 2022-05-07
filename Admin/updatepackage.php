@@ -17,7 +17,7 @@ $pprice=$_POST['packageprice'];
 $pfeatures=$_POST['packagefeatures'];
 $pdetails=$_POST['packagedetails'];	
 $pimage=$_FILES["packageimage"]["name"];
-$sql="update TmsTourPackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
+$sql="update tmsTourPackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from TmsTourPackages where PackageId=:pid";
+$sql = "SELECT * from tmsTourPackages where PackageId=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
