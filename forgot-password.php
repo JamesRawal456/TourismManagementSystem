@@ -8,7 +8,7 @@ $email=$_POST['email'];
 $mobile=$_POST['mobile'];
 $newpassword=md5($_POST['newpassword']);
 	$sql ="SELECT EmailId FROM tmsusers WHERE EmailId=:email and MobileNumber=:mobile";
-$query= $dbh -> prepare($sql);
+$query= $con -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':mobile', $mobile, PDO::PARAM_STR);
 $query-> execute();

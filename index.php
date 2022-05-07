@@ -51,7 +51,7 @@ include('includes/config.php');
 
 					
 <?php $sql = "SELECT * from tmstourpackages order by rand() limit 4";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;

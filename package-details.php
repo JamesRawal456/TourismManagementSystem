@@ -11,7 +11,7 @@ $todate=$_POST['todate'];
 $comment=$_POST['comment'];
 $status=0;
 $sql="INSERT INTO tmsbooking(PackageId,UserEmail,FromDate,ToDate,Comment,status) VALUES(:pid,:useremail,:fromdate,:todate,:comment,:status)";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->bindParam(':useremail',$useremail,PDO::PARAM_STR);
 $query->bindParam(':fromdate',$fromdate,PDO::PARAM_STR);
@@ -19,7 +19,7 @@ $query->bindParam(':todate',$todate,PDO::PARAM_STR);
 $query->bindParam(':comment',$comment,PDO::PARAM_STR);
 $query->bindParam(':status',$status,PDO::PARAM_STR);
 $query->execute();
-$lastInsertId = $dbh->lastInsertId();
+$lastInsertId = $con->lastInsertId();
 if($lastInsertId)
 {
 $msg="Booked Successfully";
@@ -96,7 +96,7 @@ $error="Something went wrong. Please try again";
 <?php 
 $pid=intval($_GET['pkgid']);
 $sql = "SELECT * from tmstourpackages where PackageId=:pid";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -109,7 +109,7 @@ foreach($results as $result)
 <form name="book" method="post">
 		<div class="selectroom_top">
 			<div class="col-md-4 selectroom_left wow fadeInLeft animated" data-wow-delay=".5s">
-				<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
+				<img src="Admin/packageimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
 			</div>
 			<div class="col-md-8 selectroom_right wow fadeInRight animated" data-wow-delay=".5s">
 				<h2><?php echo htmlentities($result->PackageName);?></h2>
