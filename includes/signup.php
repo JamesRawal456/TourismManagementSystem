@@ -16,7 +16,7 @@ $query->execute();
 $lastInsertId = $con->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="You are Scuccessfully registered. Now you can login ";
+$_SESSION['msg']="You are Successfully registered. Now you can login ";
 header('location:thankyou.php');
 }
 else 
