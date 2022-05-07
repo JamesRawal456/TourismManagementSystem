@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price in USD" required>
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price in NPR" required>
 									</div>
 								</div>
 

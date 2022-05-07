@@ -13,8 +13,8 @@ if(isset($_POST['submit']))
 
 $pimage=$_FILES["packageimage"]["name"];
 move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
-$sql="update TmsTourPackages set PackageImage=:pimage where PackageId=:imgid";
-$query = $dbh->prepare($sql);
+$sql="update tmstourpackages set PackageImage=:pimage where PackageId=:imgid";
+$query = $con->prepare($sql);
 
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
 $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
@@ -94,8 +94,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 						<?php 
 $imgid=intval($_GET['imgid']);
-$sql = "SELECT PackageImage from TmsTourPackages where PackageId=:imgid";
-$query = $dbh -> prepare($sql);
+$sql = "SELECT PackageImage from tmstourpackages where PackageId=:imgid";
+$query = $con -> prepare($sql);
 $query -> bindParam(':imgid', $imgid, PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
