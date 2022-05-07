@@ -14,7 +14,7 @@ $eid=intval($_GET['eid']);
 $status=1;
 
 $sql = "UPDATE tmsenquiry SET Status=:status WHERE  id=:eid";
-$query = $dbh->prepare($sql);
+$query = $con->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':eid',$eid, PDO::PARAM_STR);
 $query -> execute();
