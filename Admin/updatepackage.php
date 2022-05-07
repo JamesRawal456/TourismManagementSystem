@@ -17,7 +17,7 @@ $pprice=$_POST['packageprice'];
 $pfeatures=$_POST['packagefeatures'];
 $pdetails=$_POST['packagedetails'];	
 $pimage=$_FILES["packageimage"]["name"];
-$sql="update tmsTourPackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
+$sql="update tmstourpackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -82,12 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
-              <!--header file -->
-<?php include('included/header.php');?>
-							
-				     <div class="clearfix"> </div>	
-				</div>
-			  <!--header file-->
+
 
 	<ol class="breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-angle-right"></i>Edit Tour Package </li>
@@ -105,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from tmsTourPackages where PackageId=:pid";
+$sql = "SELECT * from tmstourpackages where PackageId=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
@@ -228,9 +223,6 @@ foreach($results as $result)
 </div>
 </div>
   <!--//content-inner-->
-		<!--/sidebar-menu-->
-					<?php include('included/sidebarmenu.php');?>
-						
 
 
 <!--js -->
