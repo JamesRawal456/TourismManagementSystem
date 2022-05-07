@@ -155,7 +155,7 @@ INSERT INTO `tmsusers` (`id`, `FullName`, `MobileNumber`, `EmailId`, `Password`,
 
 
 --
--- Table structure for table `tblpages`
+-- Table structure for table `tmspages`
 --
 
 CREATE TABLE `tmspages` (
@@ -165,7 +165,7 @@ CREATE TABLE `tmspages` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tblpages`
+-- Dumping data for table `tmspages`
 --
 
 INSERT INTO `tmspages` (`id`, `type`, `detail`) VALUES
