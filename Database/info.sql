@@ -254,7 +254,7 @@ ALTER TABLE `tmsissues`
 -- AUTO_INCREMENT for table `tmstourpackages`
 
 ALTER TABLE `tmstourpackages`
-  MODIFY `PackageId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `PackageId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 
 -- AUTO_INCREMENT for table `tmsusers`
