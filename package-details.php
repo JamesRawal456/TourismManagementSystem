@@ -95,7 +95,7 @@ $error="Something went wrong. Please try again";
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 <?php 
 $pid=intval($_GET['pkgid']);
-$sql = "SELECT * from tbltourpackages where PackageId=:pid";
+$sql = "SELECT * from tmstourpackages where PackageId=:pid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
