@@ -76,7 +76,7 @@ error:function (){}
 											</div>
 												<div class="clearfix"></div>								
 										</div>
-											<p>By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></p>
+											<p>By logging in you agree to our <a href="page.php?type=Terms">Terms and Conditions</a> and <a href="page.php?type=Privacy">Privacy Policy</a></p>
 									</div>
 								</div>
 							</section>
