@@ -14,7 +14,7 @@ $query->execute();
 $lastInsertId = $con->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="Info successfully submited ";
+$_SESSION['msg']="Info successfully submitted ";
 echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 else 
