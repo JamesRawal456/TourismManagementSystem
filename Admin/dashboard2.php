@@ -1,3 +1,4 @@
+<!-- Main dashboard view file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

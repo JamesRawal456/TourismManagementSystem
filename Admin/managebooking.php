@@ -1,3 +1,4 @@
+<!-- Cancel, confirm the bookings booked by user -->
 <?php
 session_start();
 error_reporting(0);

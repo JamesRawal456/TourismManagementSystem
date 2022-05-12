@@ -1,3 +1,4 @@
+<!-- View total number of users -->
 <?php
 session_start();
 error_reporting(0);
