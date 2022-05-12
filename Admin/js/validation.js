@@ -1,3 +1,5 @@
+// File for checking the password and username for admin log in
+
 document.querySelector(".btn-register").addEventListener("click",function(){
     document.querySelector(".register").classList.add("register-active");
     document.querySelector(".bg").classList.add("bg-show");

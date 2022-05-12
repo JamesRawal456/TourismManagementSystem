@@ -1,4 +1,4 @@
-
+<!-- Side bar menu page for dashboard -->
 <?php  session_start(); ?>
 <div class="bg-sidebar vh-100 w-50 position-fixed">
             <div class="log d-flex justify-content-between">

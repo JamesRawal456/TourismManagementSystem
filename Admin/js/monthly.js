@@ -1,4 +1,4 @@
-
+// File for selecting month time and data in the calendar
 (function($) {
 	$.fn.extend({
 		monthly: function(options) {
