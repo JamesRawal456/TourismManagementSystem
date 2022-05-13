@@ -1,3 +1,4 @@
+<!-- Change the packages and save them -->
 <?php
 session_start();
 error_reporting(0);

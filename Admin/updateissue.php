@@ -18,7 +18,7 @@ $query -> bindParam(':remark',$remark, PDO::PARAM_STR);
 $query-> bindParam(':iid',$iid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="your Remarlk has been Updated!!";
+$msg="your Remark has been Updated!!";
 }
 
 
@@ -57,7 +57,7 @@ window.print();
    
 
       <tr>
-      <td colspan="2" ">  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+      <td colspan="2" >  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
     
     </tr>

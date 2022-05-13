@@ -1,3 +1,4 @@
+<!-- View and read the enquiries of user -->
 <?php
 session_start();
 error_reporting(0);

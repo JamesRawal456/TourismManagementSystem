@@ -1,3 +1,4 @@
+<!-- logs out the Admin -->
 <?php
 session_start(); 
 $_SESSION = array();
