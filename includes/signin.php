@@ -5,7 +5,7 @@ if(isset($_POST['signin']))
 $email=$_POST['email'];
 $password=md5($_POST['password']);
 $sql ="SELECT EmailId,Password FROM tmsusers WHERE EmailId=:email and Password=:password";
-$query= $dbh -> prepare($sql);
+$query= $con -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
 $query-> execute();
