@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['signin']))
 {
 $email=$_POST['email'];
-$password=md5($_POST['password']);
+$password=($_POST['password']);
 $sql ="SELECT EmailId,Password FROM tmsusers WHERE EmailId=:email and Password=:password";
 $query= $con -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
